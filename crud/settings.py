@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-imbx+qmy0x@)8u&i(7sb%lsee)4%9ep@$@^s40%8%8e=zlujwv
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
-CSRF_TRUSTED_ORIGINS = ['http://crudoperations-production.up.railway.app/']
+
 
 
 # Application definition
