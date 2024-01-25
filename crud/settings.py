@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-imbx+qmy0x@)8u&i(7sb%lsee)4%9ep@$@^s40%8%8e=zlujwv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['crudoperations-production.up.railway.app/']
 
 
 # Application definition
@@ -132,3 +132,4 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+CSRF_TRUSTED_ORIGINS = ['https://crudoperations-production.up.railway.app/']
