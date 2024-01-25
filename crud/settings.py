@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-imbx+qmy0x@)8u&i(7sb%lsee)4%9ep@$@^s40%8%8e=zlujwv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["crudoperations-production.up.railway.app"]
+ALLOWED_HOSTS = ["127.0.0.1","crudoperations-production.up.railway.app"]
 CSRF_TRUSTED_ORIGINS = ["https://crudoperations-production.up.railway.app"]
 
 
@@ -81,13 +81,16 @@ WSGI_APPLICATION = 'crud.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql', 
         'NAME': BASE_DIR / 'db.sqlite3',
+
+
         'NAME': 'railway',
         'USER': 'postgres',
         'PASSWORD': '5gD6CcFgdafeabCcBA*EB*BD3GB3gace',
-        'HOST':  'roundhouse.proxy.rlwy.net',
-        'PORT':'55194',
+        'HOST': 'roundhouse.proxy.rlwy.net',
+        'PORT': '55194',
+      
     }
 }
 
@@ -140,4 +143,9 @@ STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
+
+
 
