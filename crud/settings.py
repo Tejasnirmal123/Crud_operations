@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-imbx+qmy0x@)8u&i(7sb%lsee)4%9ep@$@^s40%8%8e=zlujwv
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -78,8 +78,12 @@ WSGI_APPLICATION = 'crud.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': '5gD6CcFgdafeabCcBA*EB*BD3GB3gace',
+        'HOST':  'roundhouse.proxy.rlwy.net',
+        'PORT':'55194',
     }
 }
 
